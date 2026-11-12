@@ -2747,6 +2747,28 @@ a.ig-ov{position:absolute;inset:0;z-index:6;border-radius:inherit;cursor:pointer
 .snd-b.hint::after{content:attr(data-t);position:absolute;right:44px;top:50%;transform:translateY(-50%);white-space:nowrap;background:#3D2925;color:#fff;font:600 11px "Urbanist",sans-serif;padding:5px 9px;border-radius:99px;pointer-events:none}
 .snd-b.l.hint::after{right:auto;left:44px}
 @media (max-width:640px){.snd-b{width:32px;height:32px;top:8px;right:8px}.snd-b.l{left:8px}.snd-b svg{width:17px;height:17px}.snd-b.hint::after{display:none}}
+
+/* destinos por continentes · collage */
+.w-dest .w-panels{max-width:1020px}
+.w-dest .w-panel{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:34px;align-items:center}
+.dlb{font:400 11px var(--mono);letter-spacing:.14em;margin-top:16px;color:var(--red)}
+.dch{list-style:none;display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 0;padding:0}
+.dch li{font:400 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:#fff;border:1px solid var(--choco);border-radius:99px;padding:6px 11px;box-shadow:2px 2px 0 var(--c)}
+.dc{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr));grid-template-areas:"a b b" "a d e";gap:10px;height:390px;position:relative;margin:14px 14px 0 0}
+.dc figure{margin:0;position:relative;border:1px solid var(--choco);border-radius:10px;overflow:hidden;box-shadow:0 10px 20px rgba(61,41,37,.14);background:var(--c)}
+.dc img{width:100%;height:100%;object-fit:cover;display:block;border:0!important;border-radius:0!important;box-shadow:none!important;rotate:0deg!important;aspect-ratio:auto!important;transition:scale .5s}
+.dc figure:hover img{scale:1.05}
+.dc .ca{grid-area:a;rotate:-1.5deg}.dc .cb{grid-area:b;rotate:1deg}.dc .cd{grid-area:d;rotate:-1deg}.dc .ce{grid-area:e;rotate:1.2deg}
+.dc .cc{position:absolute;right:-22px;top:-36px;width:27%;aspect-ratio:3/4;z-index:2;background:#fff;padding:7px 7px 26px;border-radius:4px;rotate:7deg;box-shadow:0 14px 26px rgba(61,41,37,.22)}
+.dc .cc img{border-radius:2px!important}
+.dc .cc.dph{padding:0}
+.dph{display:flex;align-items:center;justify-content:center;border-style:dashed!important;background:repeating-linear-gradient(45deg,#fff 0 10px,rgba(192,190,96,.18) 10px 20px)!important}
+.dph span{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:22px;text-align:center}
+.dph b{font:400 10px var(--mono);letter-spacing:.1em;text-transform:uppercase}
+@media (max-width:900px){.w-dest .w-panel{grid-template-columns:minmax(0,1fr);gap:30px}.dc{height:340px}}
+@media (max-width:640px){.dc{height:270px;gap:7px;margin:22px 8px 0 0}.dc .cc{right:-8px;top:-24px;padding:5px 5px 16px}.dch li{font-size:10px;padding:5px 9px}.dph span{font-size:18px}.dph b{font-size:8px}}
+
+.dc.dc3{grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);grid-template-areas:"a b" "a d"}
 </style>
 </head>
 <body>
@@ -2878,18 +2900,16 @@ a.ig-ov{position:absolute;inset:0;z-index:6;border-radius:inherit;cursor:pointer
   <div class="wrap">
     <span class="w-mono x-kick rv" data-en="TRAVEL">VIAJES</span><h2 class="rv" data-en="Destinations &amp; <i>experiences</i> 🌍">Destinos y <i>experiencias</i> 🌍</h2>
     <div class="w-tabs" role="tablist" aria-label="Destinos">
-      <button role="tab" aria-selected="true" data-d="0" style="--c:#E5B3D3" data-en="Japan">Japón</button>
-      <button role="tab" aria-selected="false" data-d="1" style="--c:#F7E9AE" data-en="Switzerland">Suiza</button>
-      <button role="tab" aria-selected="false" data-d="2" style="--c:#C0BE60" data-en="Netherlands">Países Bajos</button>
-      <button role="tab" aria-selected="false" data-d="3" style="--c:#D3E4EE">Austria</button>
-      <button role="tab" aria-selected="false" data-d="4" style="--c:#FBF3CF" data-en="Europe">Europa</button>
+      <button role="tab" aria-selected="true" data-d="0" style="--c:#E5B3D3">🌸 Asia</button>
+      <button role="tab" aria-selected="false" data-d="1" style="--c:#F7E9AE" data-en="🏰 Europe">🏰 Europa</button>
+      <button role="tab" aria-selected="false" data-d="2" style="--c:#C0BE60" data-en="🌴 Oceania">🌴 Oceanía</button>
+      <button role="tab" aria-selected="false" data-d="3" style="--c:#D3E4EE" data-en="🌮 North America">🌮 Norteamérica</button>
     </div>
     <div class="w-panels">
-      <article class="w-panel on" style="--c:#E5B3D3"><div><h3><i></i><span data-en="Japan">Japón</span></h3><div class="w-kv"><span data-en="TEMPLES<br>STREETS">TEMPLOS<br>CALLES</span><span data-en="FOOD<br>CULTURE">COMIDA<br>CULTURA</span></div><p class="w-note" data-en="the city walks were my favorite ♡">los paseos por la ciudad fueron mis favoritos ♡</p></div><img src="assets/d91ed92432.webp" alt="Mónica paseando por una calle de Japón"></article>
-      <article class="w-panel" style="--c:#F7E9AE"><div><h3><i></i><span data-en="Switzerland">Suiza</span></h3><div class="w-kv"><span data-en="ALPS<br>SNOW">ALPES<br>NIEVE</span><span data-en="VIEWS<br>CABLE CARS">VISTAS<br>TELEFÉRICOS</span></div><p class="w-note" data-en="Mount Titlis, so perfect ❄">el Monte Titlis, tan perfecto ❄</p></div><img src="assets/11bfeaf974.webp" alt="Mónica en el Monte Titlis, Suiza"></article>
-      <article class="w-panel" style="--c:#C0BE60"><div><h3><i></i><span data-en="Netherlands">Países Bajos</span></h3><div class="w-kv"><span data-en="CANALS<br>HOUSES">CANALES<br>CASITAS</span><span data-en="BIKES<br>CHARM">BICIS<br>ENCANTO</span></div><p class="w-note" data-en="Zaandam looks like a story ✿">Zaandam parece de cuento ✿</p></div><img src="assets/1ee93eca2d.webp" alt="Mónica en Zaandam, Países Bajos"></article>
-      <article class="w-panel" style="--c:#D3E4EE"><div><h3><i></i><span>Austria</span></h3><div class="w-kv"><span data-en="PALACES<br>ART">PALACIOS<br>ARTE</span><span data-en="COFFEE<br>MUSIC">CAFÉ<br>MÚSICA</span></div><p class="w-note" data-en="the view from the Belvedere ♡">la vista desde el Belvedere ♡</p></div><img src="assets/471eae06fc.webp" alt="Mónica en el Palacio Belvedere, Viena"></article>
-      <article class="w-panel" style="--c:#FBF3CF"><div><h3><i></i><span data-en="Europe">Europa</span></h3><div class="w-kv"><span data-en="SPRING<br>FLOWERS">PRIMAVERA<br>FLORES</span><span data-en="STREETS<br>HISTORY">CALLES<br>HISTORIA</span></div><p class="w-note" data-en="cherry blossoms everywhere ✿">cerezos en flor por todas partes ✿</p></div><img src="assets/e68e673bcb.webp" alt="Mónica entre pétalos de cerezo en Europa"></article>
+      <article class="w-panel on" style="--c:#E5B3D3"><div><h3><i></i><span data-en="Asia 🌸">Asia 🌸</span></h3><p class="dlb" data-en="1 COUNTRY VISITED">1 PAÍS VISITADO</p><ul class="dch"><li data-en="Japan">Japón</li></ul><p class="w-note" data-en="temples, streets and lots of food ♡">templos, calles y mucha comida ♡</p></div><div class="dc"><figure class="ca"><img src="assets/d96d9634bd.webp" alt="Mónica con kimono en Kioto, Japón" loading="lazy"></figure><figure class="cb"><img src="assets/3132d6147b.webp" alt="Mónica entre linternas en Japón" loading="lazy"></figure><figure class="cc"><img src="assets/a3231ab179.webp" alt="Pagoda del templo Gotokuji, Tokio" loading="lazy"></figure><figure class="cd"><img src="assets/751dcaabe0.webp" alt="Mónica frente a muñecos daruma en Japón" loading="lazy"></figure><figure class="ce"><img src="assets/62d0d06053.webp" alt="Mónica paseando por una calle de Japón" loading="lazy"></figure></div></article>
+      <article class="w-panel" style="--c:#F7E9AE"><div><h3><i></i><span data-en="Europe 🏰">Europa 🏰</span></h3><p class="dlb" data-en="11 COUNTRIES VISITED">11 PAÍSES VISITADOS</p><ul class="dch"><li data-en="Belgium">Bélgica</li><li data-en="France">Francia</li><li data-en="Germany">Alemania</li><li>Austria</li><li data-en="Switzerland">Suiza</li><li data-en="Netherlands">Países Bajos</li><li data-en="Czech Republic">República Checa</li><li data-en="Italy">Italia</li><li data-en="United Kingdom">Reino Unido</li><li data-en="Spain">España</li><li data-en="Luxembourg">Luxemburgo</li></ul><p class="w-note" data-en="from the Alps to the canals ✿">de los Alpes a los canales ✿</p></div><div class="dc"><figure class="ca"><img src="assets/64a21ed00c.webp" alt="Mónica en el Monte Titlis, Suiza" loading="lazy"></figure><figure class="cb"><img src="assets/91483038b4.webp" alt="Kayaks en el río en Dinant, Bélgica" loading="lazy"></figure><figure class="cc"><img src="assets/375c711857.webp" alt="Mónica en Zaandam, Países Bajos" loading="lazy"></figure><figure class="cd"><img src="assets/e189868b88.webp" alt="Mónica en el Palacio Belvedere, Viena" loading="lazy"></figure><figure class="ce"><img src="assets/6d9286f834.webp" alt="Mónica entre pétalos de cerezo en Europa" loading="lazy"></figure></div></article>
+      <article class="w-panel" style="--c:#C0BE60"><div><h3><i></i><span data-en="Oceania 🌴">Oceanía 🌴</span></h3><p class="dlb" data-en="1 COUNTRY VISITED">1 PAÍS VISITADO</p><ul class="dch"><li data-en="New Zealand">Nueva Zelanda</li></ul><p class="w-note" data-en="on the other side of the world ✈">al otro lado del mundo ✈</p></div><div class="dc dc3"><figure class="ca"><img src="assets/281699ba5b.webp" alt="Mónica frente a la cascada Hunua Falls, Nueva Zelanda" loading="lazy"></figure><figure class="cb"><img src="assets/5e60256ed7.webp" alt="Mónica en el marco del Hunua Range Regional Park, Nueva Zelanda" loading="lazy"></figure><figure class="cd"><img src="assets/83f37ffd15.webp" alt="Mónica frente a un lago en Nueva Zelanda" loading="lazy"></figure></div></article>
+      <article class="w-panel" style="--c:#D3E4EE"><div><h3><i></i><span data-en="North America 🌮">Norteamérica 🌮</span></h3><p class="dlb" data-en="MY HOME 🇲🇽">MI CASA 🇲🇽</p><ul class="dch"><li data-en="Mexico">México</li></ul><p class="w-note" data-en="turquoise water, flamingos and sunshine ♡">agua turquesa, flamencos y mucho sol ♡</p></div><div class="dc"><figure class="ca"><img src="assets/f29fb1f2c7.webp" alt="Vista al mar desde el balcón de un hotel en Holbox" loading="lazy"></figure><figure class="cb"><img src="assets/ca5aec3e49.webp" alt="Playa con palmeras y lancha en Holbox" loading="lazy"></figure><figure class="cc"><img src="assets/920dcc2fba.webp" alt="Flamencos en el agua turquesa de Holbox" loading="lazy"></figure><figure class="cd"><img src="assets/818c8f4eb5.webp" alt="Letrero de Cabo Catoche, Holbox" loading="lazy"></figure><figure class="ce"><img src="assets/eb063d73de.webp" alt="Mónica lista para hacer snorkel en Holbox" loading="lazy"></figure></div></article>
     </div>
   </div>
 </section>
